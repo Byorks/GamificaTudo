@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(fonts/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
 :root {
     --menu-color: rgba(217,217,217, 0.7);
+    --rosa-tudo: #FF36AB;
+
+    --button-normal: #4E7AD9;
 }
 
 * {
@@ -11,7 +19,7 @@
 
 h1 {
     font-family: 'Be Vietnam Pro';
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 700;
     color:white;
 }
@@ -98,20 +106,41 @@ header .container-grid {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
-
 }
+
 #banner-text {
-    width: 35%;
+    width: 30%;
 
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: flex-end;
-
+    align-items: center;
     text-align: center;
+    line-height: 1.5;
 
+    
     position: absolute;
     z-index: 4;
 }
 
+/* Seleciona o primeiro h2 entre os demais */
+#banner-text h2:first-child{
+    color: var(--rosa-tudo);
+    font-weight: 500;
+}
+
+#banner-text button {
+    width: 40%;
+    height: 49px;
+
+    background-color: var(--button-normal);
+    border: none;
+    border-radius: 31px;
+
+    margin-top: 22px;
+    
+    cursor: pointer;
+
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    font-weight: 700;
+}
