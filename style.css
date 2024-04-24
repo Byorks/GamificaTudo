@@ -93,6 +93,29 @@ header .container-grid {
     align-items: center;
 }
 
+.banner .container-grid button:nth-child(2){
+    height: 55px;
+    width: 144px;
+
+    border-radius: 30px;
+    background-color: transparent;
+
+    font-family: 'Be Vietnam Pro';
+    font-size: 20px;
+    
+    border-color: black;
+    border-style: solid;
+    
+    cursor: pointer;
+    transition: background-color 500ms;
+}
+
+.banner .container-grid button:nth-child(2):hover{
+    color: white;
+    border-color: white;
+    background-color: #143D73;
+}
+
 #darkmode {
     position: absolute;
     right: 3%;
@@ -144,4 +167,7 @@ header .container-grid {
     font-size: 17px;
     font-weight: 700;
     color: white;
+}
+#darkmode {
+
 }
