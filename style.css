@@ -57,11 +57,13 @@ h2 {
 .retangle_bg {
     /* Pega 100% da altura do container "pai" */
     height: 100%;
-    width: 50%;
-
+    width: 100%;
+    /* Alterei para pegar 100% da tela e apenas redimensionei a imagem, mas para conter o outro item dentro, 
+    preciso que o tamanho maximo dele seja 50 para conter o outro, mas posso fazer essa alteracao especifica na outra classe*/
     background-image: url(img/Banner/obj-retangle.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 50% 100%;
+    background-position-x: right;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -159,15 +161,15 @@ header .container-grid {
 }
 
 #banner-text button {
-    width: 40%;
+    width: 45%;
     height: 49px;
     
     background-color: var(--button-normal);
     border: none;
     border-radius: 31px;
-    
+    padding: 0px 15px;
     margin-top: 22px;
-    padding: 5px;
+    
     
     cursor: pointer;
     
@@ -195,9 +197,26 @@ header .container-grid {
 }
 
 #banner-text button img {
-    d
+    
 }
 
+.chat-bot {
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    left: 90%;
+    top: 80%
+}
+
+.chat-bot svg{
+    color: var(--button-normal);
+    transition: color 300ms;
+}
+
+.chat-bot svg:hover {
+    color: var(--rosa-tudo);
+}
+/* Como redimensionar SVG ? */
 
 .obj-line2 {
     width: 100%;
@@ -206,5 +225,18 @@ header .container-grid {
 
     position: absolute;
     bottom: 0;
+}
 
+#contato {
+    height: 100vh;
+}
+
+#contato .retangle_bg {
+    position: unset;
+    background-position-x: 100%;
+}
+
+#contato .container-grid {
+    display: flex;
+    align-content: center;
 }
