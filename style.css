@@ -231,12 +231,25 @@ header .container-grid {
     height: 100vh;
 }
 
+#contato .contact-position {
+    display: flex;
+    justify-content: space-around;
+}
+
 #contato .retangle_bg {
     position: unset;
     background-position-x: 100%;
+    background-image: url(img/Land/RForm.png);
+
 }
 
 #contato .container-grid {
     display: flex;
     align-content: center;
+    flex-direction: column;
+
+}
+
+#contato img {
+    height: 100vh;
 }
