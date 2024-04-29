@@ -229,11 +229,12 @@ header .container-grid {
 
 #contato {
     height: 100vh;
+    
 }
 
-#contato .contact-position {
-    display: flex;
-    justify-content: space-around;
+#contato h2 {
+    color: black;
+    text-align: center;
 }
 
 #contato .retangle_bg {
@@ -242,19 +243,32 @@ header .container-grid {
    background-image: url(img/Land/TeamWorkPhotoRetangle.png), url(img/Land/RForm.png); */
    background-image: none;
     
-   background: right 100% / 48% 96% no-repeat url(img/Land/TeamWorkPhotoRetangle.png), right 100% / 50% 100% no-repeat url(img/Land/RForm.png);
+   background: right 100% / 100% 100% no-repeat url(img/Land/RForm.png);
+   float: right;
+   width: 50%;
+   }
 
-}
-
-#contato .container-grid {
-    display: flex;
-    align-content: center;
-    flex-direction: column;
-
-}
-
-#contato img {
-    width: 50vw;
+#contato .container-grid-right {
     height: 100vh;
-    padding-top: 2%;
+    
+    margin-left: 200px;
+
+
+
 }
+
+
+
+#contato .retangle_bg img {
+    height: 100vh;
+    width: 90%;
+    padding-top: 2%;
+    float: right;
+}
+
+.alinhamento-text-vertical{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
