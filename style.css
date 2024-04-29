@@ -238,8 +238,11 @@ header .container-grid {
 
 #contato .retangle_bg {
     position: unset;
-    background-position-x: 100%;
-    background-image: url(img/Land/RForm.png);
+     /* background-position-x: 100%;
+   background-image: url(img/Land/TeamWorkPhotoRetangle.png), url(img/Land/RForm.png); */
+   background-image: none;
+    
+   background: right 100% / 48% 96% no-repeat url(img/Land/TeamWorkPhotoRetangle.png), right 100% / 50% 100% no-repeat url(img/Land/RForm.png);
 
 }
 
@@ -251,5 +254,7 @@ header .container-grid {
 }
 
 #contato img {
+    width: 50vw;
     height: 100vh;
+    padding-top: 2%;
 }
