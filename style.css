@@ -109,6 +109,8 @@ header .container-grid {
     color: white;
     border-color: white;
     background-color: var(--button-hover);
+
+    transition: 300ms;
 }
 
 .banner .container-grid button:nth-child(2):active{
@@ -186,9 +188,9 @@ header .container-grid {
 }
 
 #banner-text button:hover{
-
+    
     background-color: var(--button-hover);
-    transition: 200ms;
+    transition: 300ms;
 }
 
 #banner-text button:active {
@@ -196,9 +198,6 @@ header .container-grid {
     transition: color 200ms;
 }
 
-#banner-text button img {
-    
-}
 
 .chat-bot {
     width: 100%;
@@ -268,5 +267,67 @@ header .container-grid {
 .alinhamento-texto-vertical{
     display: flex;
     flex-direction: column;
+    
+    margin-right: 10vw;
+    
+    align-items: center;
 } 
 
+.alinhamento-texto-vertical h2:first-child{
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.alinhamento-texto-vertical button{
+    width: 45%;
+    height: 49px;
+
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    font-weight: 700;
+
+    color: var(--button-normal);
+    border-radius: 31px;
+    padding: 0 15px;
+    margin-top: 22px;
+
+    cursor: pointer;
+
+    border-color: var(--button-normal);
+    border-style: solid;
+    background-color: transparent;
+
+    fill: var(--button-normal);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    transition: 500ms;
+    
+}
+
+
+.alinhamento-texto-vertical button:hover{
+    transition: 300ms;
+
+    fill: var(--button-hover);
+    color: var(--button-hover);
+    border-color: var(--button-hover);
+}
+
+.alinhamento-texto-vertical button:active{
+    fill: var(--rosa-tudo);
+    color: var(--rosa-tudo);
+    border-color: var(--rosa-tudo);
+
+    transition: 200ms;
+}
+
+#contato .obj-line2 {
+    position: unset;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
