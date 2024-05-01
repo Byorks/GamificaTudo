@@ -229,6 +229,9 @@ header .container-grid {
 #contato {
     height: 100vh;
     
+/* Borda no canto inferior da pagina*/
+    border-bottom: 7px solid var(--rosa-tudo);
+
 }
 
 #contato h2 {
@@ -248,7 +251,7 @@ header .container-grid {
    }
 
 #contato .container-grid-right {
-    margin-left: 15%;
+    margin-left: 10%;
     height: 100vh;
 
     display: flex;
@@ -256,13 +259,13 @@ header .container-grid {
 
 }
 
-
 #contato .retangle_bg img {
-    height: 100vh;
+    height: calc(100vh - 6.8px);
     width: 96%;
     padding-top: 4%;
     float: right;
 }
+
 
 .alinhamento-texto-vertical{
     display: flex;
@@ -330,4 +333,56 @@ header .container-grid {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    
+    background: linear-gradient(90deg, rgba(255,54,171,1) 0%, rgba(153,32,103,1) 100%);
 }
+
+#sobre{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.retangle-bg01 {
+    height: 100%;
+
+    background-image: url(img/Land/ROurWork.png);
+    background-size: 50% 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+
+
+.container-grid .text-pos{
+    width: 45%;
+
+    padding: 5% 0px 5% 0;
+
+    line-height: 1.5;
+    
+}
+
+
+/*  Tentativa falha de selecionar um p
+.text-pos > p:first-child{
+ background-color: #4E7AD9;
+}
+*/
+
+#sobre .p1 {
+    margin-bottom: 20px;
+}
+section#sobre .obj-line2 {
+    position: unset;
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+#sobre h2 {
+    color: black;
+}
+
