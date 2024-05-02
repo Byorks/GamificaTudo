@@ -31,6 +31,11 @@ h2 {
     font-size: 24px;
     font-weight: 400;
 }
+
+p {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+}
 .container-grid {
     width: 80vw;
     max-width: 1520px;
@@ -78,7 +83,7 @@ header {
     background-color: var(--menu-color);
     
     position: fixed;
-    z-index: 6;
+    z-index: 10;
 }
 
 header .container-grid {
@@ -202,7 +207,7 @@ header .container-grid {
 .chat-bot {
     width: 100%;
     position: fixed;
-    z-index: 5;
+    z-index: 9;
     left: 90%;
     top: 80%
 }
@@ -338,16 +343,14 @@ header .container-grid {
 }
 
 #sobre{
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    justify-content: space-between;
+    position: relative;
+    
+    z-index: 6;
+    
 }
 
 .retangle-bg01 {
-    height: 100%;
-
+    
     background-image: url(img/Land/ROurWork.png);
     background-size: 50% 100%;
     background-position: right;
@@ -355,15 +358,16 @@ header .container-grid {
 }
 
 #sobre .container-grid {
-    height: 100vh;
-
+    margin: 100px;
+    margin-bottom: 100px;
+   
     display: flex;
     align-items: center;
 }   
 
 .text-pos{
-    width: 45%;
-    height: 80%;
+    width: 40%;
+    height: 85%;
     
     line-height: 1.5;
     
@@ -415,6 +419,14 @@ header .container-grid {
     width: 50%;
 }
 .case-photos img{
-    height: 70%;
+    height: auto;
+    width: 37%;
+
+    position: absolute;
+
+    top: 10%;
+    left: 55%;
+
+    z-index: 7;
 
 }
