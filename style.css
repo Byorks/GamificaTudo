@@ -448,12 +448,20 @@ header .container-grid {
   .pos-cards img {
     width: 44%;
     
-    margin: 3% 0 3% 0;
+    margin: 3% 0 0 0;
   }
 
   .slider-carr {
     display: flex;
     justify-content: center;
     
-    padding: 50px 0 50px 0 ;
+    padding: 3% 0 3% 0 ;
   }
+
+.logo-display {
+    width: 100vw;
+    
+    overflow-x: auto;
+
+    padding-bottom: 3%
+}
