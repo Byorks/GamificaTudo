@@ -342,10 +342,6 @@ header .container-grid {
     background: linear-gradient(90deg, rgba(255,54,171,1) 0%, rgba(153,32,103,1) 100%);
 }
 
-#sobre{
-
-
-}
 
 .retangle-bg01 {
 
@@ -398,7 +394,7 @@ header .container-grid {
 .text-pos h2:nth-child(1) {
     background-color: #4E7AD9;
     text-align: center;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 28px;
     margin-top: 50px;
 }
@@ -454,14 +450,94 @@ header .container-grid {
   .slider-carr {
     display: flex;
     justify-content: center;
-    
+        
     padding: 3% 0 3% 0 ;
   }
 
+  .slider-carr img {
+    width: 12%;
+  }
+
 .logo-display {
-    width: 100vw;
+    width: 99,1vw;
     
     overflow-x: auto;
 
     padding-bottom: 3%
+}
+
+.logo-display img {
+    height:  170px;
+}
+
+#cases .obj-line2 {
+    position: unset;
+
+    background: linear-gradient(90deg, rgba(255,54,171,1) 0%, rgba(153,32,103,1) 100%);
+}
+
+#about {
+    height: 100vh;
+}
+
+#about.retangle_bg {
+    position: unset;
+
+    background-image: url(img/Land/RForm.png);
+    float: right;
+
+}
+
+#about .container-grid {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.container-grid .text-pos2 {
+    width: 40%;
+
+    padding-bottom: 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#about h2 {
+    color: black;
+}
+
+#about h2:first-of-type {
+    color: #FF36AB; 
+    font-size: 28px;
+    font-weight: 800;
+
+    margin-top: 50px;
+    margin-bottom: 8px;
+
+}
+
+#about h2:nth-child(2) {
+    margin-top: 20px;
+    background-color: red;
+    margin-bottom: 7px;
+
+}
+
+#about p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.img-about {
+    width: 42%;
+
+    display: flex;
+}
+
+#about .img-about img {
+    width: 99%;    
 }
