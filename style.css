@@ -597,7 +597,7 @@ header .container-grid {
     background: linear-gradient(90deg, rgba(255,54,171,1) 0%, rgba(153,32,103,1) 100%);
 }
 footer {
-
+    height: 60vh;
 
     background-color: red;
 
@@ -605,9 +605,41 @@ footer {
 }
 
 .footer-content {
+    height: 80%;
+
     padding-top: 3%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;    
+}
+
+.text-col {
+    height: 200px;
     
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.text-col button {
+    height: 59px;
+    width: 200px;
+
+    font-family: 'Noto Sans';
+    font-size: 17px;
+    font-weight: 800;
+    color: white;
+
+    background: transparent;
+
+    border-style: solid;
+    border-radius: 40px;
+    border-color: white;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 5px 20px 5px 20px;
 }
