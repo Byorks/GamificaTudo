@@ -484,8 +484,6 @@ header .container-grid {
     position: unset;
 
     background-image: url(img/Land/RForm.png);
-    float: right;
-
 }
 
 #about .container-grid {
@@ -540,4 +538,35 @@ header .container-grid {
 
 #about .img-about img {
     width: 99%;    
+}
+
+#about .obj-line2 {
+    position: unset;
+    
+    display: flex;
+    align-content: flex-end;
+}
+
+.button-return {
+    height: 50vh;
+    
+    background: linear-gradient(90deg, rgba(20,61,115,1) 0%, rgba(44,86,157,1) 50%, rgba(78,122,217,1) 50%, rgba(78,122,217,1) 100%);
+
+    /* Resolve a linha não estar aparecendo */
+    margin-top: 7px;
+}
+
+.white-bg {
+    height: 100%;
+    width: 100%;
+
+    background-color: white;
+
+    border-radius: 0 250px 0 250px;
+}
+
+footer {
+    height: 300px;
+
+    background-color: red;
 }
