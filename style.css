@@ -6,6 +6,7 @@
 :root {
     --menu-color: rgba(217,217,217, 0.7);
     --rosa-tudo: #FF36AB;
+    --azulescuro-tudo: #143D73;
 
     --button-normal: #4E7AD9;
     --button-hover: #12295C;
@@ -547,6 +548,22 @@ header .container-grid {
     align-content: flex-end;
 }
 
+#form {
+    height: 100px;
+
+    margin-top: 7px;
+}
+
+#form.new-retangle-bg {
+    width: 100vw;
+
+    background-color: var(--azulescuro-tudo);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+
+
+}
+
 .button-return {
     height: 50vh;
     
@@ -622,6 +639,10 @@ footer {
     
 }
 
+.footer-content .text-col p:nth-child(1) {
+    font-weight: 800;
+}
+
 .text-col {
     display: flex;
     flex-direction: column;
@@ -655,6 +676,10 @@ footer {
 .text-col button:hover {
     color: var(--rosa-tudo);
     border-color: var(--rosa-tudo);
+}
+    
+.text-col button svg:hover {
+    color: var(--rosa-tudo);
 }
 
 #footer-contact {
@@ -707,3 +732,4 @@ footer {
 .footer-redes svg:hover {
     color: var(--rosa-tudo)
 }
+
