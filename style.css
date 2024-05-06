@@ -552,6 +552,17 @@ header .container-grid {
     height: 100px;
 
     margin-top: 7px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 100px 0;
+}
+
+#form h2{
+    font-weight: 800;
+    font-size: 32px;
 }
 
 #form.new-retangle-bg {
