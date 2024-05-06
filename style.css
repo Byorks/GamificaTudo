@@ -208,7 +208,7 @@ header .container-grid {
     width: 100%;
     position: fixed;
     z-index: 9;
-    left: 90%;
+    left: 92%;
     top: 80%
 }
 
@@ -598,9 +598,10 @@ header .container-grid {
 }
 footer {
     /* Retirei o tamanho para o conteúdo dar tamanho ao footer*/
-    background-color: red;
+    background-color: #143D73;
 
-    padding: 50px 0;
+    /* padding : top e baixo, laterais 0 */
+    padding: 40px 0;
     margin-top: 7px;
 }
 
@@ -615,16 +616,16 @@ footer {
     justify-content: space-between;   
     
     border-bottom: 2px solid white;
+
+    padding-bottom: 100px;
+    margin-bottom: 50px;
     
 }
 
 .text-col {
-    height: 200px;
-    
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 
 .text-col button {
@@ -647,18 +648,24 @@ footer {
     align-items: center;
 
     padding: 5px 20px 5px 20px;
+
+    transition: 250ms ease-in-out;
+}
+
+.text-col button:hover {
+    color: var(--rosa-tudo);
+    border-color: var(--rosa-tudo);
 }
 
 #footer-contact {
-       
-    padding-top: 25px;
-    
+        
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
 #footer-contact a{
+
     font-family: 'Noto Sans';
     font-size: 14px;
     text-decoration: underline transparent;
@@ -668,15 +675,35 @@ footer {
 #footer-contact .container-grid{
     display: flex;
     justify-content: space-between;
+      
 }
+
 
 .footer-redes {
     width: 232px;
     height: 32px;
 
-    background-color: #FF36AB;
+    display: flex;
+    justify-content: space-between;
 }
 
-#footer-contact .text-col {
-    height: 65px;
+#footer-contact .text-col a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#footer-contact .text-col a:hover {
+    color: var(--rosa-tudo);
+    text-decoration: underline var(--rosa-tudo);
+
+    transition: 250ms ease-in-out;
+}
+.footer-redes svg {
+    color: white;
+    transition: 250ms ease-in-out;
+}
+
+.footer-redes svg:hover {
+    color: var(--rosa-tudo)
 }
