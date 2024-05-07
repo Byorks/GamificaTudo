@@ -561,7 +561,7 @@ header .container-grid {
     padding: 100px 0;
 }
 
-#form h2{
+#form h2 {
     font-weight: 800;
     font-size: 32px;
 }
@@ -611,8 +611,17 @@ form {
 }
 
 .field-description {
+    width: 78%;
+
+    
     display: flex;
     flex-direction: column;
+}
+
+.field-description textarea {
+    
+    border-radius: 32px;
+
 }
 
 .button-return {
@@ -622,7 +631,6 @@ form {
 
     /* Resolve a linha não estar aparecendo */
     margin-top: 7px;
-
 }
 
 .white-bg {
