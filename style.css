@@ -564,6 +564,7 @@ header .container-grid {
 #form h2 {
     font-weight: 800;
     font-size: 32px;
+    color: black;
 }
 
 #form.new-retangle-bg {
@@ -577,21 +578,29 @@ header .container-grid {
 }
 
 form {
-    width: 60%;
+    width: 50%;
 
     background-color: #fff;
     border-radius: 173px;
 
-    padding: 7% 3%;
+    padding: 7% 1%;
 
+    /* Rotulo do form*/
     text-indent: 19px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 12px
     
-    margin-top: 20px;
+}
+
+form label {
+    margin-bottom: 8px;
 }
 
 .field {
@@ -603,18 +612,19 @@ form {
 
     display: flex;
     flex-direction: column;
-
-    
-    
 }
 
 .field input {
     height: 51px;
     
-    border: 1px solid rgba(0, 0, 0, 0.5);   
+    border: 1px solid rgba(0, 0, 0, 0.4);   
     border-radius: 32px;
     
     text-indent: 18px;
+
+    font-family: 'Noto Sans';
+    font-size: 12;
+    color: hsla(0, 0%, 0%, 0.4);
 }
 
 .field-description {
@@ -623,16 +633,48 @@ form {
     
     display: flex;
     flex-direction: column;
+    
 }
 
 .field-description textarea {
     
     border-radius: 32px;    
 
-    padding: 17px;
+    padding: 16px 20px;
 
-    text-indent: 10px;
+    resize: none;
 
+}
+
+form button {
+    width: 70%;
+    height: 59px;
+
+    background-color: var(--button-normal);
+
+    border-radius: 31px;
+    border: none;
+
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+    transition: 250ms;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--button-hover);
+    
+    transition: 250ms;
+    
 }
 
 .button-return {
@@ -672,10 +714,18 @@ form {
     cursor: pointer;
 
     background-color: var(--rosa-tudo);
+
+    transition: 250ms;
 }
 
 .white-bg button:hover {
+    background-color: var(--button-hover);
 
+    transition: ease 250ms;
+}
+
+.white-bg button:active {
+    background-color: var(--rosa-tudo);
 }
 
 .button-return .obj-line2 {
