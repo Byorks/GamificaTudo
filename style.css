@@ -125,27 +125,35 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 #menu {
-    height: 450px;
+    height: 500px;
+    width: 45vw;
     
-    padding: 0px 100px;
-
+    padding: 0px 80px 50px;
+    
     position: absolute;
     z-index: 10;
+    top: 70px;
+    right: 4.5%;
 
     background-color: var(--menu-color);
 
-    top: 70px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 
     border-radius: 0 0 150px  150px;
+    
 
 }  
 
+.menu-fechado {
+    display: none;
+}
+
 #menu #button-x {
-    width: 80%;
+    width: 100%;
 
     margin: 5px 0;
     display: flex;
@@ -153,10 +161,11 @@ header div.container-grid button:nth-of-type(1):active{
 
 }
 
-#menu #menu-endereco {
+#menu #menu-endereco-nav {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
 
 }
@@ -174,8 +183,25 @@ header div.container-grid button:nth-of-type(1):active{
 
 } */
 
+#menu-endereco {
+    height: 70%;
+    width: 40%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+#menu-endereco a {
+    font-family: 'Noto Sans';
+    color: black;
+    text-decoration: underline transparent;
+    
+}
+
 #button-anchor {
-    width: 50%;
+    width: 40%;
     gap: 5px;
     
     display: flex;
@@ -185,7 +211,7 @@ header div.container-grid button:nth-of-type(1):active{
 
 #menu #button-anchor button {
     height: 57px;
-    width: 60%;
+    width: 80%;
 
     background-color: unset;
     border-style: none;
@@ -200,6 +226,16 @@ header div.container-grid button:nth-of-type(1):active{
     color: white;
 
 }   
+
+#menu-social {
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-social svg:hover {
+    color:var(--rosa-tudo);
+    transition: color 300ms;
+}
 
 #darkmode {
     position: absolute;
@@ -331,7 +367,7 @@ header div.container-grid button:nth-of-type(1):active{
    background: right 100% / 100% 100% no-repeat url(img/Land/RForm.png);
    float: right;
    width: 50%;
-   }
+}
 
 #contato .container-grid-right {
     margin-left: 10%;
@@ -678,6 +714,8 @@ form {
 
 form label {
     margin-bottom: 8px;
+
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .field {
