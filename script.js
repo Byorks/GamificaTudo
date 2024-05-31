@@ -1,5 +1,5 @@
 
-let menu = document.getElementById("menu");
+let menu = document.querySelector(".menu");
 
 function abreFechaMenu() {
     if(menu.classList.contains("menu-fechado")){
