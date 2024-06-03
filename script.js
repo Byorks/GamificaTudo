@@ -8,9 +8,6 @@ function abreFechaMenu() {
     else{
         menu.classList.add("menu-fechado");
     }
-<<<<<<< HEAD
-}
-=======
 }
 
 const enviarEmail = (event) => {
@@ -72,4 +69,3 @@ const enviarEmail = (event) => {
     event.preventDefault();
 }
 
->>>>>>> 426ca4c (fix: vulnerability issue)
