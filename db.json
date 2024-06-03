@@ -1,0 +1,13 @@
+{
+  "solicitacao": [
+    {
+      "id": "52f8"
+    },
+    {
+      "id": "b6c2",
+      "name": "Vanessinha",
+      "email": "vanessa@email.com",
+      "descricao": "Gostaria de solicitar uma integração com API Brave para envio de emails."
+    }
+  ]
+}
