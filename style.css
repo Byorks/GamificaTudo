@@ -720,10 +720,13 @@ form {
     font-size: 12px
     
 }
+/* Aparentenmente só com DOM no JS para fazer isso */
+form label:focus {
+    color: #143D73;
+}
 
 form label {
     margin-bottom: 8px;
-
     color: rgba(0, 0, 0, 0.6);
 }
 
@@ -738,21 +741,44 @@ form label {
     flex-direction: column;
 }
 
-.field input {
+.field input:placeholder-shown {
     height: 51px;
     
-    border: 1px solid rgba(0, 0, 0, 0.4);   
+    border: 1px solid rgba(0, 0, 0, 0.4);       
     border-radius: 32px;
     
     text-indent: 18px;
 
     font-family: 'Noto Sans';
     font-size: 12;
-    color: hsla(0, 0%, 0%, 0.4);
+}
+.field input{
+    height: 51px;
+    
+    border: 1px solid #143D73;   
+    border-radius: 32px;
+    
+    text-indent: 18px;
+
+    font-family: 'Noto Sans';
+    font-size: 12;
+    color: black;
 }
 
+.field input:focus {
+    color: var(--azulescuro-tudo);
+
+    border: 1px solid #143D73;
+    
+    box-shadow: 0px 0px 0px 5px #143d7325;
+    
+    transition: ease-in-out 250ms;
+}
+
+/* form label:focus, label: */
+
 .field-description {
-    width: 78%;
+    width: 75%;
 
     
     display: flex;
@@ -760,6 +786,10 @@ form label {
     
 }
 
+.field-description textarea:placeholder-shown{
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 32px; 
+}
 .field-description textarea {
     
     border-radius: 32px;    
@@ -768,6 +798,25 @@ form label {
 
     resize: none;
 
+    font-size: 12px;
+    font-family: 'Noto Sans';
+    color: black;
+
+}
+
+.field-description textarea:focus-within{
+    color: #143D73;
+
+    border: 1px solid #143D73;
+    
+    box-shadow: 0px 0px 0px 5px #143d7325;
+    
+    transition: ease-in-out 250ms;
+}
+
+/* Alterar a cor do placeholder - texto que fica dentro do form enquanto nada é escrito */ 
+.field-description textarea::placeholder, .field input::placeholder{
+    color: hsla(0, 0%, 0%, 0.4);
 }
 
 form button {
