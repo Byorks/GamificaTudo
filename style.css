@@ -977,3 +977,13 @@ footer {
     color: var(--rosa-tudo)
 }
 
+@media screen and (max-width: 1300px) {
+
+    header {
+        width: 100vw;
+    }
+
+    .case-photos img {
+        width: 50%;
+    }
+}
