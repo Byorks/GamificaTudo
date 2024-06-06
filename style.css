@@ -286,11 +286,15 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 #banner-text a {
+    width: 100%;
     text-decoration: none;
+
+    display: flex;
+    justify-content: center;
 }
 
 #banner-text button {
-    width: 100%;
+    width: 220px;
     height: 49px;
     
     background-color: var(--button-normal);
@@ -409,8 +413,11 @@ header div.container-grid button:nth-of-type(1):active{
     font-weight: 700;
 }
 
-.alinhamento-texto-vertical button{
-    width: 45%;
+.alinhamento-texto-vertical a {
+    text-decoration: none;
+}
+.alinhamento-texto-vertical a button{
+    width: 220px;
     height: 49px;
 
     font-family: 'Noto Sans';
@@ -439,7 +446,7 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 
-.alinhamento-texto-vertical button:hover{
+.alinhamento-texto-vertical a button:hover{
     transition: 300ms;
 
     fill: var(--button-hover);
@@ -447,7 +454,7 @@ header div.container-grid button:nth-of-type(1):active{
     border-color: var(--button-hover);
 }
 
-.alinhamento-texto-vertical button:active{
+.alinhamento-texto-vertical a button:active{
     fill: var(--rosa-tudo);
     color: var(--rosa-tudo);
     border-color: var(--rosa-tudo);
@@ -679,13 +686,12 @@ header div.container-grid button:nth-of-type(1):active{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    padding: 100px 0;
+
 }
 
 #form h2 {
     font-weight: 800;
-    font-size: 32px;
+    font-size: 24px;
     color: black;
 }
 
@@ -695,8 +701,6 @@ header div.container-grid button:nth-of-type(1):active{
     background-color: var(--azulescuro-tudo);
     background-size: 50% 100%;
     background-repeat: no-repeat;
-
-
 }
 
 form {
@@ -705,7 +709,7 @@ form {
     background-color: #fff;
     border-radius: 173px;
 
-    padding: 7% 1%;
+    padding: 7% 5%;
 
     /* Rotulo do form*/
     text-indent: 19px;
@@ -717,7 +721,9 @@ form {
 
     font-family: 'Noto Sans';
     font-weight: 700;
-    font-size: 12px
+    font-size: 13px;
+
+    margin: 100px 0;
     
 }
 /* Aparentenmente só com DOM no JS para fazer isso */
@@ -731,7 +737,7 @@ form label {
 }
 
 .field {
-    width: 78%;
+    width: 100%;
     
     border-radius: 32px;
 
@@ -750,7 +756,7 @@ form label {
     text-indent: 18px;
 
     font-family: 'Noto Sans';
-    font-size: 12;
+    font-size: 15px;
 }
 .field input{
     height: 51px;
@@ -761,7 +767,7 @@ form label {
     text-indent: 18px;
 
     font-family: 'Noto Sans';
-    font-size: 12;
+    font-size: 15px;
     color: black;
 }
 
@@ -778,18 +784,16 @@ form label {
 /* form label:focus, label: */
 
 .field-description {
-    width: 75%;
-
-    
+    width: 97.5%;
     display: flex;
     flex-direction: column;
-    
 }
 
 .field-description textarea:placeholder-shown{
     border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 32px; 
 }
+
 .field-description textarea {
     
     border-radius: 32px;    
@@ -798,10 +802,9 @@ form label {
 
     resize: none;
 
-    font-size: 12px;
+    font-size: 15px;
     font-family: 'Noto Sans';
     color: black;
-
 }
 
 .field-description textarea:focus-within{
@@ -818,14 +821,29 @@ form label {
 .field-description textarea::placeholder, .field input::placeholder{
     color: hsla(0, 0%, 0%, 0.4);
 }
+form #checkbox-termos {
+    width: calc(100% - 65px);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+form #checkbox-termos label{
+    margin-bottom: 0;
+    font-size: 14px;
+    text-indent: 0;
+    font-weight: 500;
+}
 
 form button {
-    width: 70%;
+    width: 96%;
     height: 59px;
 
     background-color: var(--button-normal);
 
-    border-radius: 31px;
+    border-radius: 30px;
     border: none;
 
     font-family: 'Noto Sans';
@@ -834,7 +852,8 @@ form button {
     color: white;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
     padding: 0 50px;
 
@@ -850,13 +869,19 @@ form button:hover {
     
 }
 
+#form .obj-line2 {
+    display: flex;
+    justify-content: flex-end;
+    position: unset;
+}
+
 .button-return {
     height: 50vh;
     
     background: linear-gradient(90deg, rgba(20,61,115,1) 0%, rgba(44,86,157,1) 50%, rgba(78,122,217,1) 50%, rgba(78,122,217,1) 100%);
 
     /* Resolve a linha não estar aparecendo */
-    margin-top: 7px;
+    /* margin-top: 7px; */
 }
 
 .white-bg {
@@ -961,6 +986,7 @@ footer {
     justify-content: space-around;
     align-items: center;
 
+    cursor: pointer;
     padding: 5px 20px 5px 20px;
 
     transition: 250ms ease-in-out;
@@ -975,22 +1001,20 @@ footer {
     color: var(--rosa-tudo);
 }
 
-#footer-contact {
-        
+#footer-contact {      
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
 #footer-contact a{
-
     font-family: 'Noto Sans';
     font-size: 14px;
     text-decoration: underline transparent;
     color: white;
 }
 
-#footer-contact .container-grid{
+#footer-contact .container-grid {
     display: flex;
     justify-content: space-between;
       
