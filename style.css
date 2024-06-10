@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'Noto Sans';
     src: url(fonts/NotoSans-VariableFont_wdth\,wght.ttf);
+
+    font-family: 'Saira';
+    src: url(fonts/Saira-VariableFont_wdth\,wght.ttf)
 }
 
 html {
@@ -562,7 +565,7 @@ header div.container-grid button:nth-of-type(1):active{
   }
 
   #cases {
-    
+    height: 100vh;
     background-color: #7A98D9;
   }
   
@@ -571,10 +574,58 @@ header div.container-grid button:nth-of-type(1):active{
     justify-content: space-between;
     align-content: center;
   }
-  .pos-cards img {
-    width: 44%;
+
+  .cards {
+    width: 678px;
+    height: 356px;
+
+    background-color: var(--azulescuro-tudo);
+
+    border-left: 6px solid white;
+    border-radius: 30px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    margin-top: 200px;
+  }
+
+  .cards img {
+    width: 238px;
+    height: 244px;
+
+    top: -35px;
+    position:absolute;
+
+    border-radius: 50px;
+
+    filter: drop-shadow(12px 28px 18px #0000005b);
+  }
+  
+  #card-name {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     
-    margin: 3% 0 0 0;
+    color: white;
+    font-family: 'Saira';
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  #card-text {
+    width: 55%;
+    display: flex;
+    align-items: center;
+
+    font-family: 'Noto Sans';
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
   }
 
   .slider-carr {
@@ -1048,6 +1099,13 @@ footer {
 
 .footer-redes svg:hover {
     color: var(--rosa-tudo)
+}
+@media screen and (max-width: 1650px){
+    .cards img {
+        width: 40%;
+
+    }
+
 }
 
 @media screen and (max-width: 1300px) {
