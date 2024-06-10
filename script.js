@@ -42,14 +42,9 @@ const enviarEmail = (event) => {
     }
     console.log(body)
 
-    fetch("https://api.brevo.com/v3/smtp/email", {
+    fetch("http://localhost:3000/solicitacoes", {
         method: "POST",
-        mode: "*cors",
-        headers: {
-            "Accept": "application/json",
-            "Content-Type": "application/json",
-            "Api-Key": "m"
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
     })
 
