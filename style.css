@@ -3,7 +3,7 @@
     src: url(fonts/NotoSans-VariableFont_wdth\,wght.ttf);
 
     font-family: 'Saira';
-    src: url(fonts/Saira-VariableFont_wdth\,wght.ttf)
+    src: url(fonts/Saira-VariableFont_wdth\,wght.ttf);
 }
 
 html {
@@ -139,7 +139,7 @@ header div.container-grid button:nth-of-type(1):active{
     padding: 0px 80px 50px;
     
     position: absolute;
-    z-index: 10;
+    z-index: 11;
     top: 70px;
     right: 4.5%;
 
@@ -570,6 +570,7 @@ header div.container-grid button:nth-of-type(1):active{
   }
   
   .pos-cards {
+    width: 100%;
     display:flex;
     justify-content: space-between;
     align-content: center;
@@ -585,11 +586,11 @@ header div.container-grid button:nth-of-type(1):active{
     border-radius: 30px;
 
     position: relative;
+    z-index: 7;
 
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    margin-top: 200px;
   }
 
   .cards img {
@@ -598,6 +599,7 @@ header div.container-grid button:nth-of-type(1):active{
 
     top: -35px;
     position:absolute;
+    z-index: 8;
 
     border-radius: 50px;
 
@@ -626,6 +628,7 @@ header div.container-grid button:nth-of-type(1):active{
     color: white;
     font-weight: 500;
     font-size: 17px;
+    text-align: center;
   }
 
   .slider-carr {
@@ -644,7 +647,7 @@ header div.container-grid button:nth-of-type(1):active{
     
     overflow-x: auto;
 
-    padding-bottom: 3%
+    padding-bottom: 
 }
 
 .logo-display img {
@@ -653,7 +656,6 @@ header div.container-grid button:nth-of-type(1):active{
 
 #cases .obj-line2 {
     position: unset;
-
     background: linear-gradient(90deg, rgba(255,54,171,1) 0%, rgba(153,32,103,1) 100%);
 }
 
@@ -1102,13 +1104,15 @@ footer {
 }
 @media screen and (max-width: 1650px){
     .cards {
-        width: 578px;
-        height: 300px;
+        width: 478px;
+        height: 250px;
     }
     .cards img {
         width: 35%;
         height: fit-content;
     }
+
+    
 
 }
 
