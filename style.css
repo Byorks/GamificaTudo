@@ -567,6 +567,9 @@ header div.container-grid button:nth-of-type(1):active{
   #cases {
     height: 100vh;
     background-color: #7A98D9;
+
+    padding-top: 150px ;
+    border-bottom: 7px solid #FF36AB;
   }
   
   .pos-cards {
@@ -646,8 +649,6 @@ header div.container-grid button:nth-of-type(1):active{
     width: 99,1vw;
     
     overflow-x: auto;
-
-    padding-bottom: 
 }
 
 .logo-display img {
@@ -656,7 +657,9 @@ header div.container-grid button:nth-of-type(1):active{
 
 #cases .obj-line2 {
     position: unset;
+
     background: linear-gradient(90deg, rgba(255,54,171,1) 0%, rgba(153,32,103,1) 100%);
+
 }
 
 #about {
@@ -1109,9 +1112,11 @@ footer {
     }
     .cards img {
         width: 35%;
-        height: fit-content;
+        height:fit-content;
     }
-
+    .logo-display img{
+        height: 120px;
+    }
     
 
 }
