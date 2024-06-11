@@ -567,19 +567,16 @@ header div.container-grid button:nth-of-type(1):active{
     width: 75%;
 
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
     justify-content: center;
     gap: 25px;
 }
 
 .retangle-photo {
-    height: 280px;
-    width: 330px;
-
     display:flex;
-    justify-content: space-between;
-    gap: 35px;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .ret1 {
@@ -587,6 +584,10 @@ header div.container-grid button:nth-of-type(1):active{
     width: 340px;
 }
 
+.ret2 {
+    width: 340px;
+    height: 235px;
+}
 .retangle-photo img {
 
     border-radius: 20px;
@@ -667,7 +668,8 @@ header div.container-grid button:nth-of-type(1):active{
 .slider-carr img {
   width: 12%;
 }
-.ogo-display {
+
+.logo-display {
   width: 99,1vw;
   
   overflow-x: auto;
@@ -1125,10 +1127,11 @@ footer {
     
     }
     
+    /* Aplica resize em todas as fotos 
     .retangle-photo {
         height: 200px;
-        width: 250;
-    }
+        width: 250px;
+    } */
     
     .cards {
         width: 560px;
@@ -1140,8 +1143,8 @@ footer {
     }
 
     .logo-display img{
-        height: 120px;
-        width: 500px;
+        height: 125px;
+        
     }
     
 
