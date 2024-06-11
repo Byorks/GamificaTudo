@@ -495,7 +495,7 @@ header div.container-grid button:nth-of-type(1):active{
 }   
 
 .text-pos{
-    width: 40%;
+    width: 60%;
 
     line-height: 1.5;
     
@@ -545,38 +545,50 @@ header div.container-grid button:nth-of-type(1):active{
     margin-bottom: 8px;
 }
 
+#cases img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 .case-photos {
     height: 100vh;
-    width: 45%;
+    width: 100%;
 
     display:flex;
     /* Alinha varias linhas com base no eixo vertical se a flex-direction for row(padrão), por isso o wrap tem que estar ativado
     align-content:center;
      */
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .container-photos {
-    height: 80%;
-    width: 100%;
+    height: 100%;
+    width: 75%;
 
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: center;
     gap: 25px;
 }
 
 .retangle-photo {
+    height: 280px;
+    width: 330px;
+
     display:flex;
     justify-content: space-between;
     gap: 35px;
 }
 
+.ret1 {
+    height: 288px;
+    width: 340px;
+}
+
 .retangle-photo img {
-    height: 280px;
-    width: 330px;
+
     border-radius: 20px;
     border-left: 3px solid white;
 }
@@ -1109,6 +1121,15 @@ footer {
     color: var(--rosa-tudo)
 }
 @media screen and (max-width: 1650px){
+    .case-photos {
+    
+    }
+    
+    .retangle-photo {
+        height: 200px;
+        width: 250;
+    }
+    
     .cards {
         width: 560px;
         height: 310px;
@@ -1117,8 +1138,10 @@ footer {
         width: 39%;
         height:fit-content;
     }
+
     .logo-display img{
         height: 120px;
+        width: 500px;
     }
     
 
@@ -1130,7 +1153,4 @@ footer {
         width: 100vw;
     }
 
-    .case-photos img {
-        width: 50%;
-    }
 }
