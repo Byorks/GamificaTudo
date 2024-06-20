@@ -1191,7 +1191,7 @@ footer {
     } */
     
     .cards {
-        width: 560px;
+        width: 500px;
         height: 310px;
     }
     .cards img {
@@ -1255,7 +1255,7 @@ footer {
     #rating #card-name {
         width: 35%;
         text-align: center;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
     }
 
     #rating #card-text {
@@ -1290,5 +1290,81 @@ footer {
 
     .button-return button {
         width: 30%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    header .container-grid {
+        padding: 0 25px;
+    }
+    .container-grid {
+        width: 90vw;
+    }
+
+    .menu {
+        width: 550px;
+        text-align: center;
+    }
+    .chat-bot {
+        left: 88%;
+    }
+
+    #rating .container-grid {
+        width: 90vw;
+    }
+
+    .retangle-photo {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #rating .pos-cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .container-grid {
+        padding: 0 45px;
+    }
+
+    .menu {
+        height: 92vh;
+        background-color: #e3e3e3ce;
+    }
+
+    .menu #menu-endereco-nav {
+        flex-direction: column;
+        gap: 25px
+    }
+
+    .menu #button-anchor {
+        width: 100%;
+        gap: 25px;
+    }
+
+    #menu-endereco {
+        gap: 10px
+    }
+
+    #menu-social {
+        margin-top: 5px;
+    }
+
+    #contato {
+        background-color: var(--azulescuro-tudo);
+    }
+
+    #contato .retangle_bg {
+        background: none;
+        background-color: #7A98D9;
+        border-radius: 150px 0 0 0;
+    }
+
+    #contato .retangle_bg img {
+        display: none;
     }
 }
