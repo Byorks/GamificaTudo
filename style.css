@@ -1212,5 +1212,83 @@ footer {
     header {
         width: 100vw;
     }
+    
+    .menu {
+        padding: 0 30px 50px;   
+    }
 
+    .menu #button-x {
+        width: 90%;
+    }
+
+    .banner .retangle_bg{
+        background-size: 55% 100%;
+    }
+
+    #banner-text{
+        width: 43%;
+    }
+
+    #contato div.retangle_bg {
+        width: 55%;
+    }
+
+    #cases.retangle-bg01 {
+        background-size: 55% 100%;
+    }
+    
+    #cases .container-photos {
+        width: 85%;
+    }
+
+    #rating .cards {
+        width: 450px;
+        height: 350px;
+    }
+
+    #rating .cards img {
+        width: 32%;
+        filter: drop-shadow(2px 20px 15px #0000005b);
+        top: 34px;
+    }
+
+    #rating #card-name {
+        width: 35%;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+
+    #rating #card-text {
+        width: 60%;
+        font-size: 10px;
+    }
+
+    #rating .slider-carr img {
+        width: 17%;
+    }
+
+    #history.retangle_bg {
+        background-size: 55% 100%;
+
+    }
+
+    #history .container-grid {
+        flex-wrap: nowrap;
+    }
+
+    #history .img-about {
+        width: 53%;
+    }
+
+    form {
+        width: 70%;
+    }
+
+    form button {
+        width: 80%;
+    }
+
+    .button-return button {
+        width: 30%;
+    }
 }
