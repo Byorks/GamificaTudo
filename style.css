@@ -364,7 +364,6 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 #contato {
-    height: 100vh;
     
 /* Borda no canto inferior da pagina*/
     border-bottom: 7px solid var(--rosa-tudo);
@@ -377,6 +376,7 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 #contato .retangle_bg {
+    width: 50%;
     position: unset;
      /* background-position-x: 100%;
    background-image: url(img/Land/TeamWorkPhotoRetangle.png), url(img/Land/RForm.png); */
@@ -384,12 +384,12 @@ header div.container-grid button:nth-of-type(1):active{
     
    background: right 100% / 100% 100% no-repeat url(img/Land/RForm.png);
    float: right;
-   width: 50%;
 }
 
 #contato .container-grid-right {
     margin-left: 10%;
-    height: 100vh;
+    /* Altura do tamanho da foto*/
+    height: 1073px;
 
     display: flex;
     align-items: center ;
@@ -487,8 +487,6 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 #cases .container-grid {
-    
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1338,12 +1336,12 @@ footer {
 
     .menu #menu-endereco-nav {
         flex-direction: column;
-        gap: 25px
+        gap: 15px
     }
 
     .menu #button-anchor {
         width: 100%;
-        gap: 25px;
+        gap: 10px;
     }
 
     #menu-endereco {
@@ -1355,16 +1353,73 @@ footer {
     }
 
     #contato {
+        /* Esse tamanho tira o bg, por enquanto deixando assim para depois mudar*/
         background-color: var(--azulescuro-tudo);
+        display: flex;
+        flex-direction: column;
     }
 
     #contato .retangle_bg {
-        background: none;
-        background-color: #7A98D9;
+        background: no-repeat center 50% url(img/Land/TeamWorkPhotoRetangle.png);
         border-radius: 150px 0 0 0;
+    }
+
+    #contato div.retangle_bg {
+        width: 100%;
+        height: 600px;
     }
 
     #contato .retangle_bg img {
         display: none;
+    }
+
+    #contato .container-grid-right {
+        margin: 0 0;
+        background-color: #fff;
+        border-radius: 0 150px 0 150px;
+    }
+
+    .alinhamento-texto-vertical {
+        text-align: center;
+        margin:0;   
+        padding: 0 10%;
+    }
+
+    #cases {
+        border-radius: 0 150px 0 150px;
+    }
+
+    .retangle-bg01{
+        background-color: var(--azulescuro-tudo);
+    }
+
+    #cases .container-grid {
+        flex-direction: column;
+
+    }
+
+    .container-photos {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    #cases .container-photos{
+        width: 100%;      
+        gap: 0;  
+    }
+
+    .text-pos {
+        width: 80%;
+    }
+    .retangle-photo {
+
+    }
+
+    .ret1, .ret2 {
+        width: 280px;
+    }
+
+    form {
+        width: 80%;
     }
 }
