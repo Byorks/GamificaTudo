@@ -525,7 +525,6 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 .text-pos h2:nth-child(1) {
-    background-color: #4E7AD9;
     text-align: center;
     font-weight: 800;
     font-size: 28px;
@@ -533,7 +532,6 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 #cases .text-pos h2:last-of-type {
-    background-color: RED;
     margin-top: 20px;
 }
 
@@ -781,7 +779,6 @@ header div.container-grid button:nth-of-type(1):active{
 
 #history h2:nth-child(2) {
     margin-top: 20px;
-    background-color: red;
     margin-bottom: 7px;
 
     font-weight: 600;
@@ -1323,6 +1320,7 @@ footer {
     }
 }
 
+
 @media screen and (max-width: 800px) {
     h1 {
         font-size: 24px;
@@ -1398,6 +1396,11 @@ footer {
 
     #cases {
         border-radius: 0 150px 0 150px;
+        color: white;
+    }
+    #cases h2 {
+        color: white;
+        background-color: unset;
     }
 
     .retangle-bg01{
@@ -1435,12 +1438,20 @@ footer {
         padding: 13% 8%;
     }
 
+    #history.retangle_bg {
+        background-image: unset;
+    }
+
     #history .container-grid {
         flex-direction: column;
     }
 
     #history .img-about img{
         margin: 50px 0;
+    }
+
+    .container-grid .text-pos2 {
+        width: 90%;
     }
 
     .button-return button {
@@ -1483,4 +1494,67 @@ footer {
         flex-direction: column;
         gap: 25px;
     }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        position: relative ;
+    }
+    
+    header .container-grid {
+        padding: 0 0;
+    }
+
+    .banner .retangle_bg {
+        background-size: 100% 100%;
+    }
+
+    #banner-text {
+        width: 90%;
+    }
+
+    #darkmode {
+        display: none;
+    }
+
+    .menu {
+        width: 100vw;
+        right: 0;
+        justify-content: space-evenly;
+        border-radius: 0 0 50px 50px;
+        z-index: 15;
+    }
+
+    .menu #menu-endereco-nav{
+        font-size: 15px;
+    }
+
+    #menu-endereco {
+        display: none;
+    }
+    .cards p{
+        font-size: 14px;
+    }
+
+    #rating .slider-carr img {
+        padding-top: 20px;
+        width: 40%;
+    }
+
+    .logos:before {
+        background: unset;
+    }
+    .logos:after{
+        background: unset;
+    }
+
+    form {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    #form.new-retangle-bg {
+        background: unset;
+    }
+
 }
