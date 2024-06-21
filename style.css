@@ -1327,7 +1327,7 @@ footer {
     header .container-grid {
         padding: 0 45px;
     }
-
+    
     .menu {
         height: 92vh;
         background-color: #e3e3e3ce;
@@ -1349,6 +1349,10 @@ footer {
 
     #menu-social {
         margin-top: 5px;
+    }
+    
+    .chat-bot {
+        left: 78%    
     }
 
     #contato {
@@ -1419,7 +1423,8 @@ footer {
     }
 
     form {
-        width: 80%;
+        width: 90%;
+        padding: 13% 8%;
     }
 
     #history .container-grid {
@@ -1433,5 +1438,10 @@ footer {
     .button-return button {
         width: 60%;
         font-size: 25px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 25px;
     }
 }
