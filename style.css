@@ -389,7 +389,7 @@ header div.container-grid button:nth-of-type(1):active{
 #contato .container-grid-right {
     margin-left: 10%;
     /* Altura do tamanho da foto*/
-    height: 1073px;
+    height: 100vh;
 
     display: flex;
     align-items: center ;
@@ -741,7 +741,6 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 #history {
-    height: calc(100vh - 7px);
 }
 
 #history.retangle_bg {
@@ -800,7 +799,9 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 #history .img-about img {
-    width: 99%;    
+    width: 99%; 
+    
+    margin: 200px 0;
 }
 
 #history .obj-line2 {
@@ -811,8 +812,6 @@ header div.container-grid button:nth-of-type(1):active{
 }
 
 #form {
-    margin-top: 7px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1405,7 +1404,7 @@ footer {
     
     #cases .container-photos{
         width: 100%;      
-        gap: 0;  
+        gap: 25px;  
     }
 
     .text-pos {
@@ -1421,5 +1420,18 @@ footer {
 
     form {
         width: 80%;
+    }
+
+    #history .container-grid {
+        flex-direction: column;
+    }
+
+    #history .img-about img{
+        margin: 50px 0;
+    }
+
+    .button-return button {
+        width: 60%;
+        font-size: 25px;
     }
 }
