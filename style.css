@@ -1324,6 +1324,14 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    #banner-text h2{
+        font-size: 18px
+    }
+
     header .container-grid {
         padding: 0 45px;
     }
@@ -1441,6 +1449,37 @@ footer {
     }
 
     .footer-content {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #contato div.retangle_bg {
+        width: 100vw;
+    }
+
+    .case-photos {
+        height: unset;
+        margin-bottom: 25px;
+    }
+
+    #history.retangle_bg {
+        background-image: unset;
+        background-color: white;
+        
+    }
+    /* #history.retangle_bg::after {
+        
+        background-color: var(--button-hover);
+        border-radius: 0 110px 0 110px;
+    } */
+
+    .white-bg {
+        border-radius: 0 110px 0 110px;
+    }
+
+    #footer-contact .container-grid {
         flex-direction: column;
         gap: 25px;
     }
