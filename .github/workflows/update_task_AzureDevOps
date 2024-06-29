@@ -27,5 +27,5 @@ jobs:
       run: python updateTask.py
       env:
         BUILD_SOURCEVERSIONMESSAGE: ${{ github.event.head_commit.message }}
-        organization_url: ${{ secrets.ORGANIZATION_URL }}
-        personal_access_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+        AZURE_DEVOPS_URL: ${{ secrets.ORGANIZATION_URL }}
+        AZURE_DEVOPS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
